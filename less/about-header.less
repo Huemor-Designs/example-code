@@ -1,0 +1,38 @@
+.about-header {
+	.about-header-inner {
+		.container();
+	}
+
+	.about-header-content-wrapper {
+		.make-md-column(8);
+		.make-md-column-offset(2);
+	}
+
+	.about-header-panels {
+		
+
+		.about-header-pane {
+			height: 300px;
+			.make-background-size-cover('/images/wood-texture.jpg');
+		}
+
+		.pane-copy {
+			
+		}
+
+	}
+
+	.pane-image {
+		width: 230px;
+		height: 415px;
+		background-color: @dark-red;
+		position: absolute;
+		right: 100%;
+		top: -60px;
+		padding: 0 20px;
+	}
+
+	.pane-copy {
+		padding: 35px 30px;
+	}
+}

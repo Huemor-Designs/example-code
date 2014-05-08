@@ -1,0 +1,53 @@
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	border: none;
+	background-color: transparent;
+
+	.navbar-inner {
+		.container();
+
+		ul {
+			background-color: white;
+			background-color: rgba(255,255,255,0.85);
+
+			> li  {
+				.h4();
+				margin: 0;
+
+				&.nav-contact {
+					.h5();
+					margin: 0;
+				}
+
+				a {
+					padding: 45px 45px 45px 0; 	
+					color: black;
+				}
+
+				&:first-child a {
+					padding-left: 45px;
+				}
+
+				&:hover, &.current {
+					> a > span {
+						.hilite();
+					}
+				}
+
+			}//li
+		}//ul
+	}
+
+	.navbar-brand {
+		width: 265px;
+		height: 110px;
+		margin-top: 10px;
+		
+		background: url('/images/alisons-white-type.svg');
+		background-size: 265px 110px;
+	}
+}

@@ -1,0 +1,64 @@
+.footer {
+	padding-bottom: 30px;
+	background-color: @light-grey;
+
+	.footer-inner {
+		.container();
+
+		padding: 30px 40px;
+		min-height: 135px;
+		.make-background-size-cover('/images/wood-texture.jpg');
+	}
+
+	.footer-nav, .footer-contact, .footer-legal {
+		text-align: center;
+	}
+
+	.footer-nav, .footer-contact {
+		@media (min-width: @screen-md) {
+			text-align: left;
+		}
+	}
+
+	.footer-legal {
+		@media (min-width: @screen-md) {
+			text-align: right;
+		}
+	}
+
+	.footer-nav {
+		.make-md-column(2);
+	}
+
+	.footer-contact {
+		.make-md-column(4);
+	}
+
+	.footer-legal {
+		.make-md-column(6);
+	}
+
+	h6 {
+		margin-bottom: 15px;
+	}
+
+	a {
+		text-decoration: underline;
+
+		&.privacy-link {
+			margin-left: 20px;
+		}
+
+		&, &:hover, &:active, &:focus {
+			color: white;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}

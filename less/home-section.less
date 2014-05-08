@@ -1,0 +1,103 @@
+.home-section {
+	.container();
+
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+
+	&.first {
+		margin-top: -60px;
+	}
+
+	margin-bottom: 40px;
+
+
+	.home-section-copy, .home-section-image {
+		height: 100%;
+	}
+
+	.home-section-copy {
+		.make-md-column(4);
+
+		padding-left: 0;
+		padding-right: 0;
+
+		&.right {
+			.color-box {
+				float: right;
+			}
+		}
+
+		@media (min-width: @screen-md) {
+			&.right {
+				float: right;
+
+				.color-box {
+					float: left;
+				}
+			}
+
+			&.left {
+				.color-box {
+					float: right;
+				}
+			}
+		}
+
+		.home-section-copy-inner {
+			padding: 50px 30px;
+
+			@media (min-width: @screen-md) {
+				padding: 50px;
+			}
+
+			.make-background-size-cover('/images/wood-texture.jpg');
+		}
+
+	}
+
+	.home-section-image {
+		.make-md-column(8);
+		height: 220px;
+
+		&.right {
+			left: auto;
+			right: 0;
+		}
+
+		&.left {
+			left: 0;
+			right: auto;
+		}
+
+		@media (min-width: @screen-md) {
+			position: absolute;
+			height: 100%;
+		}
+
+		
+
+		.home-section-image-inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+
+			&.first-image {
+				.make-background-size-cover('/images/stockphoto1.jpg');
+			}
+
+			&.second-image {
+				.make-background-size-cover('/images/grumpycat.jpg');
+			}
+
+			&.third-image {
+				.make-background-size-cover('/images/stockphoto3.jpg');
+			}
+			
+		}
+	}
+
+}

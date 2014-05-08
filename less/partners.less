@@ -1,0 +1,60 @@
+.partners{
+	.partners-inner {
+		.container();
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.partners-wrapper {
+		.make-md-column(8);
+		.make-md-column-offset(2);
+		.clearfix();
+
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.partners-row {
+		.row();
+		margin: 0 auto;
+
+		width: 200px;
+
+		@media (min-width: @screen-xs) {
+			width: 400px;
+		}
+
+		@media (min-width: 640px) {
+			width: 600px;
+			
+		}
+
+		@media (min-width: @screen-lg) {
+			width: auto;
+			.row();
+		}
+
+	}	
+
+	.partner {
+		.make-xs-column(3);
+
+		width: 200px;
+		height: 170px;
+		margin-bottom: 30px;
+
+		.partner-inner {
+			width: 100%;
+			height: 100%;
+
+			.make-background-size-cover('/images/wood-texture.jpg');
+		}
+	}
+
+	h2 {
+		color: black;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+}

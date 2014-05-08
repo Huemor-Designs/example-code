@@ -1,0 +1,27 @@
+.header {
+	.clearfix();
+
+	height: 580px;
+	text-align: center;
+	text-shadow: 1px 1px 9px black;
+
+	.make-background-size-cover('/images/header-img.jpg');
+
+	.about & {
+		height: 430px;
+	}
+
+	.header-inner {
+		.container();
+
+		h1 {
+			margin-top: 230px;
+			margin-bottom: 60px;
+		}
+
+		.header-arrow {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}

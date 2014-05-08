@@ -1,0 +1,54 @@
+.btn, .color-box {
+	.h2();
+	display: inline-block;
+	padding: 19px 14px;
+
+	background-color: @light-blue;
+	border: none;
+	border-radius: 0;
+
+	margin: 0;
+
+	&.btn-orange {
+		background-color: @orange;
+	}
+
+	&.btn-burnt-orange {
+		background-color: @burnt-orange;
+	}
+
+	&.btn-yellow {
+		background-color: @yellow;
+	}
+
+	&.btn-dark-red {
+		background-color: @dark-red;
+	}
+
+	&.btn-purple {
+		background-color: @purple;
+	}
+}
+
+.btn-emergency {
+	.h5();
+
+	position: absolute;
+	top: 240px;
+	left: -88px;
+
+	width: 220px;
+	height: 44px;
+	padding: 15px;
+	margin: 0;
+
+	background-color: @burnt-orange;
+
+	.rotate(90deg);
+
+	img {
+		width: 20px;
+		margin-right: 10px;
+		margin-top: -6px;
+	}
+}
