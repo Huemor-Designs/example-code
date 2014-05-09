@@ -4,26 +4,14 @@
 
 	.footer-inner {
 		.container();
-
-		padding: 30px 40px;
 		min-height: 135px;
+		padding: 30px 15px;
 		.make-background-size-cover('/images/wood-texture.jpg');
-	}
 
-	.footer-nav, .footer-contact, .footer-legal {
-		text-align: center;
-	}
-
-	.footer-nav, .footer-contact {
 		@media (min-width: @screen-md) {
-			text-align: left;
+			padding: 30px 40px;
 		}
-	}
-
-	.footer-legal {
-		@media (min-width: @screen-md) {
-			text-align: right;
-		}
+		
 	}
 
 	.footer-nav {
@@ -36,17 +24,67 @@
 
 	.footer-legal {
 		.make-md-column(6);
+
+		@media (min-width: @screen-md) {
+			text-align: right;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.footer-social {
+		margin-top: 20px;
+		
+		a {
+			height: 51px;
+			display: inline-block;
+			padding: 10px;
+
+			&, &:after {
+				text-decoration: none;
+			}
+
+		}
+		.facebook {
+			.make-icon(before; @icon-facebook; 28px);
+		}
+
+		.twitter {
+			.make-icon(before; @icon-twitter; 28px);
+		}
+	}
+
+	.footer-nav, .footer-contact, .footer-legal {
+		.remove-side-padding();
+
+		@media (max-width: @screen-md) {
+			text-align: center;
+		}
 	}
 
 	h6 {
 		margin-bottom: 15px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		@media (max-width: @screen-md) {
+			display: inline-block;
+		}
 	}
 
 	a {
 		text-decoration: underline;
 
 		&.privacy-link {
-			margin-left: 20px;
+			margin-top: 15px;
+			display: inline-block;
+
+			@media (min-width: @screen-md) {
+				margin-top: 0;
+				margin-left: 20px;
+			}
 		}
 
 		&, &:hover, &:active, &:focus {

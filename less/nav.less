@@ -7,6 +7,14 @@
 	border: none;
 	background-color: transparent;
 
+	.contact & {
+		position: static;
+	}
+
+	.navbar-nav {
+		padding: 0 20px;
+	}
+
 	.navbar-inner {
 		.container();
 
@@ -21,19 +29,31 @@
 				&.nav-contact {
 					.h5();
 					margin: 0;
+
+					a {
+						padding-top: 37px;
+					}
+				}
+
+				.phone-number, .email {
+					margin-right: 10px;
+				}
+
+				.phone-number {
+					.make-icon(before; @icon-phone; 24px);
+				}
+
+				.email {
+					.make-icon(before; @icon-envelope; 26px);
 				}
 
 				a {
-					padding: 45px 45px 45px 0; 	
+					padding: 45px 22px; 	
 					color: black;
 				}
 
-				&:first-child a {
-					padding-left: 45px;
-				}
-
 				&:hover, &.current {
-					> a > span {
+					> a > .hl {
 						.hilite();
 					}
 				}
@@ -43,11 +63,16 @@
 	}
 
 	.navbar-brand {
-		width: 265px;
-		height: 110px;
+		width: 260px;
+		height: 107px;
 		margin-top: 10px;
-		
+
 		background: url('/images/alisons-white-type.svg');
-		background-size: 265px 110px;
+		background-size: 260px 107px;
+
+		.contact & {
+			background: url('/images/alisons-black-type.svg');
+			background: url('/images/alisons-white-type.svg');
+		}
 	}
 }

@@ -14,11 +14,15 @@
 			</div>
 		</header>
 
+		<div class="btn-emergency"><span></span>For Emergencies</div>
+
 		<section class="about-header">
 			<div class="about-header-inner">
 				<div class="about-header-content-wrapper">
+
+
 					<div class="about-header-panels tab-content">
-						<div id="#story" class="about-header-pane tab-pane active">
+						<div id="story" class="about-header-pane tab-pane in active">
 							<div class="pane-image">
 								<h2 class="pane-title">Our Story</h2>
 							</div>
@@ -29,7 +33,7 @@
 							</div>
 						</div>
 
-						<div id="#practice" class="about-header-pane tab-pane">
+						<div id="practice" class="about-header-pane tab-pane">
 							<div class="pane-image">
 								<h2 class="pane-title">Our Practice</h2>
 							</div>
@@ -40,7 +44,7 @@
 							</div>
 						</div>
 
-						<div id="#hospital" class="about-header-pane tab-pane">
+						<div id="hospital" class="about-header-pane tab-pane">
 							<div class="pane-image">
 								<h2 class="pane-title">Our Hospital</h2>
 							</div>
@@ -54,9 +58,15 @@
 
 					<div class="about-header-nav">
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#story" data-toggle="tab">our story</a></li>
-							<li><a href="#practice" data-toggle="tab">our practice</a></li>
-							<li><a href="#hospital" data-toggle="tab">the hospital</a></li>
+							<li class="active">
+								<a href="#story" data-toggle="tab"><span>our story</span></a>
+							</li>
+							<li>
+								<a href="#practice" data-toggle="tab"><span>our practice</span></a>
+							</li>
+							<li>
+								<a href="#hospital" data-toggle="tab"><span>the hospital</span></a>
+							</li>
 						</ul>
 					</div>
 
@@ -70,9 +80,9 @@
 				<div class="members">
 					<div class="member">
 						<div class="member-image">
-							<div class="color-box member-name">Norm</div>
+							<div class="color-box member-name">Name</div>
 						</div>
-						<h5 class="member-title">Flog</h5>
+						<h5 class="member-title">title</h5>
 						<p class="member-description">
 							sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pretium dolor eu mi auctor, a cursus diam tincidunt. Nullam vehicula orci ac justo pharetra fermentum. Pellentesque ut ornare lacus. Aliquam nec aliquam magna. Curabitur vestibulum urna sit amet placerat consectetur. Aliquam iaculis nunc quis massa commodo tempor. Morbi ut facilisis diam, non commodo risus. Fusce in sem vel lorem ultrices interdum quis 
 						</p>
@@ -80,9 +90,9 @@
 
 					<div class="member">
 						<div class="member-image">
-							<div class="color-box member-name">Norm</div>
+							<div class="color-box member-name">Name</div>
 						</div>
-						<h5 class="member-title">Flog</h5>
+						<h5 class="member-title">title</h5>
 						<p class="member-description">
 							sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pretium dolor eu mi auctor, a cursus diam tincidunt. Nullam vehicula orci ac justo pharetra fermentum. Pellentesque ut ornare lacus. Aliquam nec aliquam magna. Curabitur vestibulum urna sit amet placerat consectetur. Aliquam iaculis nunc quis massa commodo tempor. Morbi ut facilisis diam, non commodo risus. Fusce in sem vel lorem ultrices interdum quis 
 						</p>
@@ -90,9 +100,9 @@
 
 					<div class="member">
 						<div class="member-image">
-							<div class="color-box member-name">Norm</div>
+							<div class="color-box member-name">Name</div>
 						</div>
-						<h5 class="member-title">Flog</h5>
+						<h5 class="member-title">title</h5>
 						<p class="member-description">
 							sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pretium dolor eu mi auctor, a cursus diam tincidunt. Nullam vehicula orci ac justo pharetra fermentum. Pellentesque ut ornare lacus. Aliquam nec aliquam magna. Curabitur vestibulum urna sit amet placerat consectetur. Aliquam iaculis nunc quis massa commodo tempor. Morbi ut facilisis diam, non commodo risus. Fusce in sem vel lorem ultrices interdum quis 
 						</p>
@@ -100,9 +110,9 @@
 
 					<div class="member">
 						<div class="member-image">
-							<div class="color-box member-name">Norm</div>
+							<div class="color-box member-name">Name</div>
 						</div>
-						<h5 class="member-title">Flog</h5>
+						<h5 class="member-title">title</h5>
 						<p class="member-description">
 							sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pretium dolor eu mi auctor, a cursus diam tincidunt. Nullam vehicula orci ac justo pharetra fermentum. Pellentesque ut ornare lacus. Aliquam nec aliquam magna. Curabitur vestibulum urna sit amet placerat consectetur. Aliquam iaculis nunc quis massa commodo tempor. Morbi ut facilisis diam, non commodo risus. Fusce in sem vel lorem ultrices interdum quis 
 						</p>

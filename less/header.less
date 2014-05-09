@@ -17,11 +17,17 @@
 		h1 {
 			margin-top: 230px;
 			margin-bottom: 60px;
+
+			.about & {
+				margin-top: 200px;
+			}
 		}
 
 		.header-arrow {
 			display: block;
 			margin: 0 auto;
+
+			.make-icon(before; @icon-arrow-down; 28px);
 		}
 	}
 }

@@ -13,11 +13,27 @@
 
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-		        <li class="<?php if ($current == "home") echo "current"; ?>" ><a href="/"><span>Home</span></a></li>
-		        <li class="<?php if ($current == "about") echo "current"; ?>"><a href="/about/"><span>About</span></a></li>
-		        <li class="<?php if ($current == "contact") echo "current"; ?>"><a href="/contact/"><span>Contact</span></a></li>
-		        <li class="nav-contact"><a href="/contact/"><span>516-555-5555</span></a></li>
-		        <li class="nav-contact"><a href="/contact/"><span>sayhi@alisonanimal.com</span></a></li>
+		        <li class="<?php if ($current == "home") echo "current"; ?>" >
+		        	<a href="/"><span class="hl">Home</span></a>
+		        </li>
+		        <li class="<?php if ($current == "about") echo "current"; ?>">
+		        	<a href="/about/"><span class="hl">About</span></a>
+		        </li>
+		        <li class="<?php if ($current == "contact") echo "current"; ?>">
+		        	<a href="/contact/"><span class="hl">Contact</span></a>
+		        </li>
+		        <li class="nav-contact">
+		        	<a href="/contact/">
+		        		<span class="phone-number"></span>
+		        		<span class="hl">516-555-5555</span>
+		        	</a>
+		        </li>
+		        <li class="nav-contact">
+		        	<a href="/contact/">
+		        		<span class="email"></span>
+		        		<span class="hl">sayhi@alisonanimal.com</span>
+		        	</a>
+		        </li>
 		  	</ul>
 	  	</div>
   	</div>
