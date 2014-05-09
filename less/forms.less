@@ -1,0 +1,99 @@
+.forms {
+	margin-bottom: 50px;
+
+	.forms-inner {
+		.container();
+		.remove-side-padding();
+	}
+
+	.forms-nav a {
+		.h4();
+		color: black;
+		margin: 0;
+		border-radius: 0;
+		border: 2px solid transparent;
+
+		.active & {
+			border: 2px solid @yellow;
+			border-bottom: 0;
+		}
+	}
+
+	.forms-nav {
+		ul {
+			border-bottom: 0;
+		}
+
+		li {
+			margin-bottom: -2px;
+
+			a {
+				padding: 20px 15px;
+			}
+
+			&.active {
+				a {
+					color: black;
+					border: 2px solid @yellow;
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+
+	form {
+		position: relative;
+		padding: 35px;
+
+		.make-background-size-cover('/images/wood-texture.jpg');
+
+		.form-title {
+			text-transform: none;
+			padding: 0 15px;
+		}
+
+
+		.form-group {
+			.clearfix();
+			@media (max-width: @screen-md) {
+				margin-bottom: 0;
+			}
+
+			.form-column {
+				.make-md-column(6);
+
+				@media (max-width: @screen-md) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		.btn-submit {
+			position: absolute;
+			right: 35px;
+			bottom: -30px;
+		}
+	}
+}
+
+input, textarea {
+	font: 16px @copy-font, sans-serif;
+	color: @input-border;
+
+	width: 100%;
+	padding: 12px;
+
+	border: 0;
+	margin-bottom: 20px;
+	
+	background-color: transparent;
+}
+
+input {
+	border-bottom: 2px solid @input-border;
+}
+
+textarea {
+	border: 2px solid @input-border;
+	max-width: 100%;
+}
