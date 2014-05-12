@@ -1,4 +1,5 @@
 .map {
+	position: relative;
 	height: 415px;
 	margin-bottom: 30px;
 	background-color: #CCC;
@@ -9,14 +10,49 @@
 	}
 
 	.gmap {
-		width: 71.6%;
+		width: 100%;
+
+		@media (min-width: @screen-md) {
+			width: 71.6%;
+		}
 	}
 
 	.contact-info {
-		width: 28.4%;
-		padding: 20px 30px;
+		width: 100%;
+		height: auto;
+		padding-top: 20px;
+		margin-bottom: 50px;
+		text-align: center;
 
 		background-color: @dark-red;
+
+		@media (min-width: @screen-sm) {
+			text-align: left;
+		}
+
+		@media (min-width: @screen-md) {
+			position: absolute;
+			right: 0;
+
+			width: 28.4%;
+			height: 100%;
+			padding: 20px 30px;
+			margin-bottom: 0;
+		}
+
+		.contact-info-inner {
+			@media (max-width: @screen-md) {
+				.container();
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		.contact-column {
+			@media (max-width: @screen-md) {
+				.make-sm-column(6);
+			}
+		}
 
 		.info {
 			margin-bottom: 30px;

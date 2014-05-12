@@ -1,46 +1,74 @@
 .about-header {
-	margin-top: -60px;
 	margin-bottom: 80px;
+
+	@media (min-width: @screen-sm) {
+		margin-top: -60px;
+	}
 
 	.about-header-inner {
 		.container();
-
 		.remove-side-padding();
+
+		@media (min-width: @screen-md) and (max-width: @screen-lg) {
+			width: 750px;
+		}
 	}
 
 	.about-header-content-wrapper {
-		.make-md-column(8);
-		.make-md-column-offset(2);
+		position: relative;
+
+		@media (min-width: @screen-lg) {
+			.make-md-column(8);
+			.make-md-column-offset(2);
+			.remove-side-padding();
+		}
 
 		.remove-side-padding();
 	}
 
 	.about-header-panels {
 		.about-header-pane {
-			height: 300px;
+			
 			.make-background-size-cover('/images/wood-texture.jpg');
+
+			@media (min-width: @screen-md) {
+				height: 300px;
+			}
 		}
 
 		.pane-image {
-			width: 230px;
-			height: 415px;
+			.clearfix();
+			
+			height: 215px;
 			background-color: @dark-red;
-			position: absolute;
-			left: 0;
-			top: -50px;
 			padding: 0 20px;
+
+			@media (min-width: @screen-sm) {
+				width: 230px;
+				height: 415px;
+
+				position: absolute;
+				left: 0;
+				top: -50px;
+			}
 		}
 
 		.pane-copy {
 			padding: 35px 30px;
-			margin-left: 230px;
+
+			@media (min-width: @screen-sm) {
+				margin-left: 230px;
+			}
 		}
 	}
 
 	.nav-tabs {
 		border-bottom: 0;
-		margin-left: 230px;
 		padding: 0 10px;
+
+		@media (min-width: @screen-sm) {
+			margin-left: 230px;
+		}
 
 		li.active {
 			a {

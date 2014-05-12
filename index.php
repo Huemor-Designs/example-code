@@ -16,7 +16,7 @@
 			</div>
 		</header>
 
-		<div class="btn-emergency"><span></span>For Emergencies</div>
+		<?php include("includes/emergency-modal.php"); ?>
 
 		<section class="home-section first">
 			<div class="home-section-image right"><div class="home-section-image-inner first-image"></div></div>

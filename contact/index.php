@@ -10,38 +10,50 @@
 
 		<section class="map">
 			<div id="map-canvas" class="gmap"></div>
+
 			<div class="contact-info">
-				<h5 class="info">
-					<span class="x-small">Email:</span><br>
-					sayhi@alisonanimal.com
-				</h5>
+				<div class="contact-info-inner">
+					<div class="contact-column">
+						<h5 class="info">
+							<span class="x-small">Email:</span><br>
+							sayhi@alisonanimal.com
+						</h5>
 
-				<h5 class="info">
-					<span class="x-small">Phone:</span><br>
-					555-555-5555<br>
-					555-555-5555
-				</h5>
+						<h5 class="info">
+							<span class="x-small">Phone:</span><br>
+							555-555-5555<br>
+							555-555-5555
+						</h5>
+					</div>
 
-				<h5 class="info">
-					alison's animal hospital<br>
-					123 address<br>
-					city, ny ZIP
-				</h5>
+					<div class="contact-column">
+						<h5 class="info">
+							alison's animal hospital<br>
+							123 address<br>
+							city, ny ZIP
+						</h5>
 
-				<h5 class="info">
-					Monday-Friday: 10am - 8pm<br>
-					Saturday: 10am - 9pm<br>
-					Sunday: 9am-5pm
-				</h5>
+						<h5 class="info">
+							Monday-Friday: 10am - 8pm<br>
+							Saturday: 10am - 9pm<br>
+							Sunday: 9am-5pm
+						</h5>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<div class="btn-emergency"><span></span>For Emergencies</div>
+		<?php include("../includes/emergency-modal.php"); ?>
 
 		<section class="forms">
 			<div class="forms-inner">
-				<div class="forms-nav">
-					<ul class="nav nav-tabs">
+				<div class="forms-nav dropdown">
+					<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+						Select an Inquiry Type
+						<span class="caret"></span>
+					</button>
+
+					<ul class="nav nav-tabs dropdown-menu">
 						<li class="active">
 							<a href="#general" data-toggle="tab"><span>General Inquiry</span></a>
 						</li>
@@ -58,8 +70,8 @@
 				</div>
 
 				<div class="forms tab-content">
-					<form id="general" class="tab-pane active">
-						<h2 class="form-title">Hello</h2>
+					<form id="general" class="tab-pane active fade in">
+						<h2 class="form-title">General Inquiry</h2>
 
 						<div class="form-group">
 							<div class="form-column">
@@ -82,7 +94,7 @@
 						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
 					</form>
 
-					<form id="technician" class="tab-pane">
+					<form id="technician" class="tab-pane fade">
 						<h2 class="form-title">A question or follow up that goes to a technician.</h2>
 
 						<div class="form-group">
@@ -97,7 +109,7 @@
 								<input type="text" class="form-input" id="phone number" name="phone number" placeholder="phone number*" required>
 							</div>
 
-							<div class="form-column">
+							<div class="form-column ">
 								<label for="technician-name" class="sr-only">technician's name</label>
 								<input type="text" class="form-input" id="technician-name" name="technician-name" placeholder="technician's name*" required>
 
@@ -110,7 +122,7 @@
 						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
 					</form>
 
-					<form id="appointment" class="tab-pane">
+					<form id="appointment" class="tab-pane fade">
 						<h2 class="form-title">Request an appointment</h2>
 
 						<div class="form-group">
@@ -140,7 +152,7 @@
 						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
 					</form>
 
-					<form id="prescription" class="tab-pane">
+					<form id="prescription" class="tab-pane fade">
 						<h2 class="form-title">Directly request a re-fill for a prescription.</h2>
 
 						<div class="form-group">
