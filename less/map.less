@@ -1,8 +1,12 @@
 .map {
 	position: relative;
-	height: 415px;
+	height: 345px;
 	margin-bottom: 30px;
 	background-color: #CCC;
+
+	@media (min-width: @screen-xs) {
+		height: 415px;
+	}
 
 	.gmap, .contact-info {
 		float: left;

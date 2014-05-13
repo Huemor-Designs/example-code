@@ -8,7 +8,7 @@
 	border: none;
 	background-color: white;
 
-	@media (min-width: @screen-lg) {
+	@media (min-width: @screen-md) {
 		background-color: transparent;
 	}
 
@@ -19,44 +19,61 @@
 	}
 
 	.navbar-nav {
-		padding: 0 20px;
 		margin: 0;
 
 		@media (min-width: @screen-md) {
 			margin: 0;
+		}
+
+		@media (min-width: @screen-lg) {
+			padding: 0 20px;
 		}
 	}
 
 	.navbar-inner {
 		.container();
 		
-
-		@media (max-width: @screen-lg) {
+		@media (max-width: @screen-md) {
 			width: 100%;
 		}
 
 		ul {
 			background-color: white;
+			text-align: center;
 
-			@media (min-width: @screen-lg) {
+			@media (min-width: @screen-md) {
+				text-align: left;
 				background-color: rgba(255,255,255,0.85);
 			}
 
 			> li  {
-				.h4();
+				.h5();
 				margin: 0;
 
+				@media (min-width: @screen-lg) {
+					.h4();
+					margin: 0;
+				}
+
 				&.nav-contact {
-					.h5();
+					.h6();
 					margin: 0;
 
+					@media (min-width: @screen-lg) {
+						.h5();
+						margin: 0;
+					}
+
 					a {
-						padding-top: 37px;
+						@media (min-width: @screen-md) {
+							padding-top: 37px;
+						}
 					}
 				}
 
 				.phone-number, .email {
 					margin-right: 10px;
+					line-height: 0;
 				}
 
 				.phone-number {
@@ -68,8 +85,16 @@
 				}
 
 				a {
-					padding: 45px 22px; 	
+					padding: 18px;
 					color: black;
+
+					@media (min-width: @screen-md) {
+						padding: 45px 18px;
+					}
+
+					@media (min-width: @screen-lg) {
+						padding: 45px 22px;
+					}
 				}
 
 				&:hover, &.current {
@@ -85,6 +110,7 @@
 	.navbar-collapse {
 		padding: 0;
 		max-height: none;
+		border-top: 0;
 	}
 
 	button {
@@ -108,14 +134,17 @@
 			height: 93px;
 		}
 		
-		@media (min-width: @screen-lg) {
-			width: 260px;
-			height: 106px;
+		@media (min-width: @screen-md) {
 			margin-top: 10px;
 			margin-left: 0;
 
 			background-image: url('/images/alisons-white-type.svg');
 			
+		}
+
+		@media (min-width: @screen-lg) {
+			width: 260px;
+			height: 106px;
 		}
 
 		.contact & {

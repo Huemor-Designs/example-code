@@ -22,7 +22,7 @@
 
 
 					<div class="about-header-panels tab-content">
-						<div id="story" class="about-header-pane tab-pane in active">
+						<div id="story" class="about-header-pane tab-pane fade in active">
 							<div class="pane-image">
 								<h2 class="pane-title">Our Story</h2>
 							</div>
@@ -33,7 +33,7 @@
 							</div>
 						</div>
 
-						<div id="practice" class="about-header-pane tab-pane">
+						<div id="practice" class="about-header-pane tab-pane fade">
 							<div class="pane-image">
 								<h2 class="pane-title">Our Practice</h2>
 							</div>
@@ -44,7 +44,7 @@
 							</div>
 						</div>
 
-						<div id="hospital" class="about-header-pane tab-pane">
+						<div id="hospital" class="about-header-pane tab-pane fade">
 							<div class="pane-image">
 								<h2 class="pane-title">Our Hospital</h2>
 							</div>

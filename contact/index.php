@@ -69,7 +69,7 @@
 					</ul>
 				</div>
 
-				<div class="forms tab-content">
+				<div class="form-panels tab-content">
 					<form id="general" class="tab-pane active fade in">
 						<h2 class="form-title">General Inquiry</h2>
 
