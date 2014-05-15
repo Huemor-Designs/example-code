@@ -9,11 +9,18 @@
 		<?php include("includes/navigation.php"); ?>
 
 		<header class="header">
-			<div class="header-inner">
-				<h1>Animal lovers with a <span class="hilite">history</span> to prove it.</h1>
-				<h2>See why</h2>
-				<span class="header-arrow"></span>
+			<div id="slides">
+				<img src="/images/stockphoto1.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+				<img src="/images/header-img.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
 			</div>
+			
+			<h1>
+				Animal lovers with a <span class="hilite">history</span> to prove it.
+				<div class="see-why">
+					<span class="hl">See why</span>
+					<span class="header-arrow"></span>
+				</div>
+			</h1>
 		</header>
 
 		<?php include("includes/emergency-modal.php"); ?>

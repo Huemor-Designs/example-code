@@ -1,30 +1,25 @@
 <footer class="footer">
 	<div class="footer-inner">
 		<div class="footer-nav">
-			<h6><a href="#">Home</a></h6>
-			<h6><a href="#">About</a></h6>
-			<h6><a href="#">Contact</a></h6>
+			<h6><a href="/"><span class="hl">Home</span></a></h6>
+			<h6><a href="/about/"><span class="hl">About</a></span></h6>
+			<h6><a href="/contact/"><span class="hl">Contact</a></span></h6>
 		</div>
 
 		<div class="footer-contact">
 			<h4>Contact</h4>
-			<p>
-				<span class="small">EMAIL</span>: email@email.com
-				<br>
-				<span class="small">PHONE</span>: 123-234-4567
-			</p>
+			<p><a class="contact-info" href="tel:+1-631-393-6116"><span class="phone-number"></span><span class="hl">email@email.com</a></span></p>
+			<p><a class="contact-info" href="mailto:sayhi@alisonanimal.com"><span class="email"></span><span class="hl">123-234-4567</a></span></p>
 		</div>
 		
 		<div class="footer-legal">
 			<h6>
-				&copy; ALISON ANIMAL HOSPITAL, 2014
-				<br>
-				<a href="#" class="privacy-link">privacy policy</a>
+				<a href="#"><span class="hl">Design by HUEMOR</span></a>
 			</h6>
 
 			<div class="footer-social">
-				<a class="facebook" href="#"></a>
-				<a class="twitter" href="#"></a>
+				<a class="facebook" href="#"><span class="hl"></span></a>
+				<a class="twitter" href="#"><span  class="hl"></span></a>
 			</div>
 		</div>
 	</div>
@@ -33,5 +28,11 @@
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.form.min.js"></script>
+	<script src="/js/jquery-ui.custom.min.js"></script>
+	<script src="/js/jquery.placeholder.js"></script>
+	<script src="/js/globalize.js"></script>
+	<script src="/js/jquery.slides.min.js"></script>
 	<script src="/js/alison.js"></script>
 </footer>
+</div><!--main wrapper-->

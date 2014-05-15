@@ -1,0 +1,51 @@
+.slidesjs-navigation {
+	.glyphicon();
+	display: block;
+	position: absolute;
+	top: auto;
+	bottom: 50%;
+	
+
+	width: 40px;
+	font-size: 20px;
+	text-shadow: none;
+
+	@media (min-width: @screen-sm) {
+		bottom: 20px
+	}
+
+	@media (min-width: @screen-md) {
+		bottom: 80px;
+	}
+
+	&, &:hover, &:active {
+		color: transparent;
+	}
+
+	padding: 10px;
+	background-color: @light-blue;
+	z-index: 10;
+
+	&.slidesjs-previous {
+		.glyphicon-chevron-left();
+		left: 0;
+
+		@media (min-width: @screen-sm) {
+			left: auto;
+			right: 80px;
+		}
+	}
+
+	&.slidesjs-next {
+		.glyphicon-chevron-right();
+		right: 0;
+
+		@media (min-width: @screen-sm) {
+			right: 30px;
+		}
+	}
+
+	&:before {
+		color: white;
+	}
+}

@@ -1,18 +1,18 @@
-//@grid-float-breakpoint
 .navbar {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 
 	border: none;
+	margin-bottom: 0;
 	background-color: white;
+
+	z-index: 10;
 
 	@media (min-width: @screen-md) {
 		background-color: transparent;
+		position: absolute;
 	}
-
-	z-index: 1;
 
 	.contact & {
 		position: static;
@@ -42,6 +42,7 @@
 			text-align: center;
 
 			@media (min-width: @screen-md) {
+				margin-top: 25px;
 				text-align: left;
 				background-color: rgba(255,255,255,0.85);
 			}
@@ -57,6 +58,7 @@
 
 				&.nav-contact {
 					.h6();
+					position: relative;
 					margin: 0;
 
 					@media (min-width: @screen-lg) {
@@ -64,16 +66,34 @@
 						margin: 0;
 					}
 
-					a {
-						@media (min-width: @screen-md) {
-							padding-top: 37px;
-						}
+					.hl {
+						margin-left: 35px;
+					}
+				}
+
+				&.nav-emergency {
+					margin-bottom: 25px;
+					
+					@media (min-width: @screen-md) {
+						display: none;
 					}
 				}
 
 				.phone-number, .email {
-					margin-right: 10px;
-					line-height: 0;
+					position: absolute;
+
+					top: 14px;
+
+					@media (min-width: @screen-md) {
+						top: 24px;
+					}
+
+					@media (max-width: @screen-md) {
+						.no-csstransforms & {
+							position: static;
+							margin-right: -20px;
+						}
+					}
 				}
 
 				.phone-number {
@@ -89,11 +109,11 @@
 					color: black;
 
 					@media (min-width: @screen-md) {
-						padding: 45px 18px;
+						padding: 28px 18px;
 					}
 
 					@media (min-width: @screen-lg) {
-						padding: 45px 22px;
+						padding: 28px 22px;
 					}
 				}
 
@@ -126,8 +146,10 @@
 		height: 73px;
 		margin-left: 15px;
 
-		background-image: url('/images/alisons-black-type.svg');
+		background-image: url('/images/alisons-black-type.png');
+		background-image: url('/images/alisons-black-type.svg'), none;
 		background-size: 100% auto;
+		background-repeat: no-repeat;
 
 		@media (min-width: @screen-sm) {
 			width: 230px;
@@ -138,7 +160,8 @@
 			margin-top: 10px;
 			margin-left: 0;
 
-			background-image: url('/images/alisons-white-type.svg');
+			background-image: url('/images/alisons-white-type.png');
+			background-image: url('/images/alisons-white-type.svg'), none;
 			
 		}
 
@@ -148,7 +171,8 @@
 		}
 
 		.contact & {
-			background-image: url('/images/alisons-black-type.svg');
+			background-image: url('/images/alisons-black-type.png');
+			background-image: url('/images/alisons-black-type.svg'), none;
 		}
 	}
 }

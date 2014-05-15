@@ -1,7 +1,8 @@
 .btn, .color-box {
-	.h2();
+	.h3();
 	display: inline-block;
-	padding: 19px 14px;
+	padding: 25px;
+	letter-spacing: .05em;
 
 	background-color: @light-blue;
 	border: none;
@@ -35,11 +36,9 @@
 
 	position: absolute;
 	top: 240px;
-	left: -88px;
+	left: -78px;
 
-	width: 220px;
-	height: 44px;
-	padding: 12px 15px;
+	padding: 12px;
 	margin: 0;
 
 	background-color: @burnt-orange;
@@ -47,10 +46,52 @@
 
 	.rotate(90deg);
 
-	span {
+	.no-csstransforms & {
+		left: 0;
+		padding: 0;
+
+		.emergency-icon, .emergency-type {
+			display: none;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	.emergency-icon {
 		width: 20px;
 		margin-right: 10px;
 
-		.make-icon(before; @icon-plus; 20px);
+		.make-icon(before; @icon-plus; 14px);
+	}
+
+	img {
+		display: none;
+	}
+
+	@media (max-width: @screen-md) {
+		display: none;
+	}
+
+	.nav & {
+		display: inline-block;
+		position: static;
+		border-radius: 6px;
+		
+		.rotate(0deg);
+	}
+}
+
+
+
+.btn-submit {
+	.ajax-loader {
+		display: none;
+		margin-left: 10px;
+
+		 &.active {
+			display: inline-block;
+		}
 	}
 }

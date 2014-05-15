@@ -1,3 +1,4 @@
+<div class="main-wrapper"><!--main wrapper-->
 <nav class="navbar navbar-default" role="navigation">
 	<div class="navbar-inner">
 		<div class="navbar-header">
@@ -23,16 +24,23 @@
 		        	<a href="/contact/"><span class="hl">Contact</span></a>
 		        </li>
 		        <li class="nav-contact">
-		        	<a href="/contact/">
+		        	<a href="tel:+1-631-393-6116">
 		        		<span class="phone-number"></span>
 		        		<span class="hl">516-555-5555</span>
 		        	</a>
 		        </li>
 		        <li class="nav-contact">
-		        	<a href="/contact/">
+		        	<a href="mailto:sayhi@alisonanimal.com">
 		        		<span class="email"></span>
 		        		<span class="hl">sayhi@alisonanimal.com</span>
 		        	</a>
+		        </li>
+		        <li class="nav-emergency">
+		        	<div class="btn-emergency" data-toggle="modal" data-target="#emergency-modal">
+						<span class="emergency-icon"></span>
+						<span class="emergency-type">For Emergencies</span>
+						<img src="/images/emergency-btn.png" alt="emergency contact" title="emergency contact">
+					</div>
 		        </li>
 		  	</ul>
 	  	</div>

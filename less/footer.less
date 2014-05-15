@@ -41,18 +41,34 @@
 			height: 51px;
 			display: inline-block;
 			padding: 10px;
+		}
 
-			&, &:after {
-				text-decoration: none;
+		.facebook, .twitter {
+			&:before {
+				.transition(0.3s);
 			}
 
+			&:hover {
+				> span {
+					display: block;
+				}
+			}
 		}
+
 		.facebook {
 			.make-icon(before; @icon-facebook; 28px);
+			
+			&:hover:before {
+				color: #3B5998
+			}
 		}
 
 		.twitter {
 			.make-icon(before; @icon-twitter; 28px);
+			
+			&:hover:before {
+				color: #55ACEE;
+			}
 		}
 	}
 
@@ -65,6 +81,8 @@
 	}
 
 	h6 {
+		text-transform: none;
+
 		margin-bottom: 15px;
 		margin-left: 10px;
 		margin-right: 10px;
@@ -75,8 +93,12 @@
 	}
 
 	a {
-		text-decoration: underline;
-
+		&.contact-info {
+			.hl {
+				margin-left: 35px;
+			}
+		}
+		
 		&.privacy-link {
 			margin-top: 15px;
 			display: inline-block;
@@ -93,10 +115,24 @@
 
 		&:hover {
 			text-decoration: none;
+
+			.hl {
+				.hilite();
+			}
 		}
 	}
 
-	p {
-		margin-bottom: 0;
+	.phone-number, .email {
+		position: absolute;
+	}
+
+	.phone-number {
+		margin-right: 10px;
+		.make-icon(before; @icon-phone; 24px);
+	}
+
+	.email {
+		margin-right: 10px;
+		.make-icon(before; @icon-envelope; 26px);
 	}
 }

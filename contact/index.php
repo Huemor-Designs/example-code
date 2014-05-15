@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 	<?php
 		$current = "contact";
@@ -16,13 +17,13 @@
 					<div class="contact-column">
 						<h5 class="info">
 							<span class="x-small">Email:</span><br>
-							sayhi@alisonanimal.com
+							<a href="mailto:sayhi@alisonanimal.com">sayhi@alisonanimal.com</a>
 						</h5>
 
 						<h5 class="info">
 							<span class="x-small">Phone:</span><br>
-							555-555-5555<br>
-							555-555-5555
+							<a href="tel:+1-631-393-6116">631-393-6116</a><br>
+							<a href="tel:+1-631-393-6116">631-393-6116</a>
 						</h5>
 					</div>
 
@@ -30,7 +31,7 @@
 						<h5 class="info">
 							alison's animal hospital<br>
 							123 address<br>
-							city, ny ZIP
+							city, ny 11411
 						</h5>
 
 						<h5 class="info">
@@ -64,13 +65,13 @@
 							<a href="#appointment" data-toggle="tab"><span>Request an Appointment</span></a>
 						</li>
 						<li>
-							<a href="#prescription" data-toggle="tab"><span> Prescription Re-fill Request</span></a>
+							<a href="#prescription" data-toggle="tab"><span>Prescription Re-fill Request</span></a>
 						</li>
 					</ul>
 				</div>
 
 				<div class="form-panels tab-content">
-					<form id="general" class="tab-pane active fade in">
+					<form id="general" class="tab-pane active fade in" action="/endpoints/general.php" method="post">
 						<h2 class="form-title">General Inquiry</h2>
 
 						<div class="form-group">
@@ -81,20 +82,22 @@
 								<label for="email" class="sr-only">email</label>
 								<input type="text" class="form-input" id="email" name="email" placeholder="email*" required>
 
-								<label for="phone number" class="sr-only">phone number</label>
-								<input type="text" class="form-input" id="phone number" name="phone number" placeholder="phone number*" required>
+								<label for="phone" class="sr-only">phone number</label>
+								<input type="text" class="form-input" id="phone" name="phone" placeholder="phone number*" required>
 							</div>
 							
 							<div class="form-column">
-								<label for="company" class="sr-only">message</label>
-								<textarea  class="form-input" id="message" name="message" rows="6" placeholder="message" required></textarea>
+								<label for="message" class="sr-only">message</label>
+								<textarea  class="form-input" id="message" name="message" rows="6" placeholder="message*" required></textarea>
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
+						<div class="form-response"></div>
+
+						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT<img class="ajax-loader" src="/images/icons/ajax-loader.gif" alt=""></button>
 					</form>
 
-					<form id="technician" class="tab-pane fade">
+					<form id="technician" class="tab-pane fade" action="/endpoints/technician.php" method="post">
 						<h2 class="form-title">A question or follow up that goes to a technician.</h2>
 
 						<div class="form-group">
@@ -105,24 +108,26 @@
 								<label for="email" class="sr-only">email</label>
 								<input type="text" class="form-input" id="email" name="email" placeholder="email*" required>
 
-								<label for="phone number" class="sr-only">phone number</label>
-								<input type="text" class="form-input" id="phone number" name="phone number" placeholder="phone number*" required>
+								<label for="phone" class="sr-only">phone number</label>
+								<input type="text" class="form-input" id="phone" name="phone" placeholder="phone number*" required>
 							</div>
 
 							<div class="form-column ">
-								<label for="technician-name" class="sr-only">technician's name</label>
-								<input type="text" class="form-input" id="technician-name" name="technician-name" placeholder="technician's name*" required>
+								<label for="tech-name" class="sr-only">technician's name</label>
+								<input type="text" class="form-input" id="tech-name" name="tech-name" placeholder="technician's name*" required>
 
-								<label for="imageUpload" class="sr-only">image upload</label>
-								<input type="file" class="form-input" id="imageUpload" name="imageUpload">
+								<label for="uploadFile" class="sr-only">image upload</label>
+								<input type="file" class="form-input" id="uploadFile" name="uploadFile">
 								<p class="help-block">Upload a jpg, png or pdf file</p>
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
+						<div class="form-response"></div>
+
+						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT<img class="ajax-loader" src="/images/icons/ajax-loader.gif" alt=""></button>
 					</form>
 
-					<form id="appointment" class="tab-pane fade">
+					<form id="appointment" class="tab-pane fade" action="/endpoints/appointment.php" method="post">
 						<h2 class="form-title">Request an appointment</h2>
 
 						<div class="form-group">
@@ -133,14 +138,16 @@
 								<label for="email" class="sr-only">email</label>
 								<input type="text" class="form-input" id="email" name="email" placeholder="email*" required>
 
-								<label for="phone number" class="sr-only">phone number</label>
-								<input type="text" class="form-input" id="phone number" name="phone number" placeholder="phone number*" required>
+								<label for="phone" class="sr-only">phone number</label>
+								<input type="text" class="form-input" id="phone" name="phone" placeholder="phone number*" required>
 							</div>
 
 							<div class="form-column">
 								<label for="appointment-date" class="sr-only">appointment date</label>
-								<input type="text" class="form-input" id="appointment-date" name="appointment-date" placeholder="appointment date*" required>
-								
+								<div class="datepicker">
+									<input type="text" class="form-input" id="appointment-date" name="appointment-date" placeholder="appointment date*" required>
+								</div>
+
 								<label for="appointment-time" class="sr-only">appointment time</label>
 								<input type="text" class="form-input" id="appointment-time" name="appointment-time" placeholder="appointment time*" required>
 
@@ -149,10 +156,12 @@
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
+						<div class="form-response"></div>
+
+						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT<img class="ajax-loader" src="/images/icons/ajax-loader.gif" alt=""></button>
 					</form>
 
-					<form id="prescription" class="tab-pane fade">
+					<form id="prescription" class="tab-pane fade" action="/endpoints/prescription.php" method="post">
 						<h2 class="form-title">Directly request a re-fill for a prescription.</h2>
 
 						<div class="form-group">
@@ -163,8 +172,8 @@
 								<label for="email" class="sr-only">email</label>
 								<input type="text" class="form-input" id="email" name="email" placeholder="email*" required>
 
-								<label for="phone number" class="sr-only">phone number</label>
-								<input type="text" class="form-input" id="phone number" name="phone number" placeholder="phone number*" required>
+								<label for="phone" class="sr-only">phone number</label>
+								<input type="text" class="form-input" id="phone" name="phone" placeholder="phone number*" required>
 
 								<label for="medication-name" class="sr-only">medication name</label>
 								<input type="text" class="form-input" id="medication-name" name="medication-name" placeholder="medication name*" required>
@@ -175,22 +184,31 @@
 								<input type="text" class="form-input" id="pet-type" name="pet-type" placeholder="type of pet*" required>
 
 								<label for="pet-sex" class="sr-only">sex of pet</label>
-								<input type="text" class="form-input" id="pet-sex" name="pet-sex" placeholder="sex of pet*" required>
+								<select class="form-input" id="pet-sex" name="pet-sex" placeholder="sex of pet*" required>
+								  <option value="">sex of pet*</option>
+								  <option value="Male">Male</option>
+								  <option value="Female">Female</option>
+								</select>
 
 								<label for="pet-age" class="sr-only">age of pet</label>
 								<input type="text" class="form-input" id="pet-age" name="pet-age" placeholder="age of pet*" required>
 
-								<label for="prescription-name" class="sr-only">prescription name</label>
-								<input type="text" class="form-input" id="prescription-name" name="prescription-name" placeholder="current prescription number*" required>
+								<label for="prescription-number" class="sr-only">prescription number</label>
+								<input type="text" class="form-input" id="prescription-name" name="prescription-number" placeholder="current prescription number*" required>
 							</div>
 						</div>
 
-						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT</button>
+						<div class="form-response"></div>
+
+						<button type="submit" class="btn btn-submit btn-yellow" value="submit" name="submit">SUBMIT<img class="ajax-loader" src="/images/icons/ajax-loader.gif" alt=""></button>
 					</form>
+
 				</div>
 			</div>
 		</section>
 
 		<?php include("../includes/footer.php"); ?>
+
+	</div>
 	</body>
 </html>

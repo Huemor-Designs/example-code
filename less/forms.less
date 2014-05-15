@@ -131,9 +131,62 @@
 			bottom: -30px;
 		}
 	}
+
+	.datepicker {
+		.make-icon(before; @icon-calendar; 28px);
+
+		&:before {
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			color: @input-border;
+		}
+	}
+
+	.ui-spinner.ui-widget.ui-widget-content.ui-corner-all {
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+		color: inherit;
+
+		font-family: inherit;
+		font-size: inherit;
+
+		display: block;
+
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+			border: none;
+			background: none;
+		}
+
+		.ui-spinner-up, .ui-spinner-down {
+			cursor: pointer;
+			.transition(.3s);
+		}
+
+		.ui-spinner-up {
+			top: -5px;
+
+			&:hover {
+				top: -7px;
+			}
+		}
+
+		.ui-spinner-down {
+			bottom: 15px;
+
+			&:hover {
+				bottom: 13px;
+			}
+		}
+
+		input {
+			&:extend(input);
+		}
+	}
 }
 
-input, textarea {
+input, textarea, select {
 	font: 16px @copy-font, sans-serif;
 	color: @input-border;
 
@@ -146,7 +199,7 @@ input, textarea {
 	background-color: transparent;
 }
 
-input {
+input, select {
 	border-bottom: 2px solid @input-border;
 }
 
