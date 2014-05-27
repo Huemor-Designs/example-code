@@ -30,7 +30,7 @@
 		        	</a>
 		        </li>
 		        <li class="nav-contact">
-		        	<a href="mailto:sayhi@alisonanimal.com">
+		        	<a href="/contact/">
 		        		<span class="email"></span>
 		        		<span class="hl">sayhi@alisonanimal.com</span>
 		        	</a>
@@ -39,7 +39,6 @@
 		        	<div class="btn-emergency" data-toggle="modal" data-target="#emergency-modal">
 						<span class="emergency-icon"></span>
 						<span class="emergency-type">For Emergencies</span>
-						<img src="/images/emergency-btn.png" alt="emergency contact" title="emergency contact">
 					</div>
 		        </li>
 		  	</ul>

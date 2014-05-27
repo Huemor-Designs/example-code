@@ -36,7 +36,7 @@
 
 	position: absolute;
 	top: 240px;
-	left: -78px;
+	left: -86px;
 
 	padding: 12px;
 	margin: 0;
@@ -45,6 +45,10 @@
 	cursor: pointer;
 
 	.rotate(90deg);
+
+	.contact & {
+		top: 715px;
+	}
 
 	.no-csstransforms & {
 		left: 0;
@@ -70,7 +74,7 @@
 		display: none;
 	}
 
-	@media (max-width: @screen-md) {
+	@media (max-width: @screen-sm-max) {
 		display: none;
 	}
 

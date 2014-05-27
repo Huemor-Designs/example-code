@@ -8,8 +8,8 @@
 
 		<div class="footer-contact">
 			<h4>Contact</h4>
-			<p><a class="contact-info" href="tel:+1-631-393-6116"><span class="phone-number"></span><span class="hl">email@email.com</a></span></p>
-			<p><a class="contact-info" href="mailto:sayhi@alisonanimal.com"><span class="email"></span><span class="hl">123-234-4567</a></span></p>
+			<p><a class="contact-info" href="tel:+1-631-393-6116"><span class="phone-number"></span><span class="hl">123-234-4567</a></span></p>
+			<p><a class="contact-info" href="/contact/"><span class="email"></span><span class="hl">email@email.com</a></span></p>
 		</div>
 		
 		<div class="footer-legal">

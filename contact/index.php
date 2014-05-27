@@ -17,7 +17,7 @@
 					<div class="contact-column">
 						<h5 class="info">
 							<span class="x-small">Email:</span><br>
-							<a href="mailto:sayhi@alisonanimal.com">sayhi@alisonanimal.com</a>
+							sayhi@alisonanimal.com
 						</h5>
 
 						<h5 class="info">
@@ -29,12 +29,13 @@
 
 					<div class="contact-column">
 						<h5 class="info">
-							alison's animal hospital<br>
-							123 address<br>
-							city, ny 11411
+							<span class="x-small">Address:</span><br>
+							224 Prospect Park West<br>
+							Brooklyn, NY 11215
 						</h5>
 
 						<h5 class="info">
+							<span class="x-small">Hours:</span><br>
 							Monday-Friday: 10am - 8pm<br>
 							Saturday: 10am - 9pm<br>
 							Sunday: 9am-5pm
@@ -59,7 +60,7 @@
 							<a href="#general" data-toggle="tab"><span>General Inquiry</span></a>
 						</li>
 						<li>
-							<a href="#technician" data-toggle="tab"><span>Ask a Technician</span></a>
+							<a href="#technician" data-toggle="tab"><span>Upload a document or image</span></a>
 						</li>
 						<li>
 							<a href="#appointment" data-toggle="tab"><span>Request an Appointment</span></a>

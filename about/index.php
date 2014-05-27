@@ -20,7 +20,6 @@
 			<div class="about-header-inner">
 				<div class="about-header-content-wrapper">
 
-
 					<div class="about-header-panels tab-content">
 						<div id="story" class="about-header-pane tab-pane fade in active">
 							<div class="pane-image">
@@ -56,8 +55,13 @@
 						</div>
 					</div>
 
-					<div class="about-header-nav">
-						<ul class="nav nav-tabs">
+					<div class="about-header-nav dropdown">
+						<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+							Who we are
+							<span class="caret"></span>
+						</button>
+
+						<ul class="nav nav-tabs dropdown-menu">
 							<li class="active">
 								<a href="#story" data-toggle="tab"><span>our story</span></a>
 							</li>

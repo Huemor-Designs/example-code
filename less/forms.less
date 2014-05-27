@@ -20,7 +20,7 @@
 	}
 
 	.forms-nav {
-		@media (max-width: @screen-md) {
+		@media (max-width: @screen-md-max) {
 			width: 350px;
 			max-width: 100%;
 			margin: 0 auto -20px auto;
@@ -30,14 +30,18 @@
 		}
 
 		ul {
+			top: auto;
+			bottom: 100%;
+
 			margin: 0;
 			padding: 0;
+			border-radius: 0;
 			width: 100%;
 
 			
 			.box-shadow(none);
 
-			@media (min-width: @screen-md) {
+			@media (min-width: @screen-lg) {
 				position: static;
 				display: block;
 				float: none;
@@ -48,27 +52,43 @@
 		li {
 			margin-bottom: -2px;
 			
-			@media (max-width: @screen-md) {
+			@media (max-width: @screen-md-max) {
 				float: none;
 			}
 
 			a {
 				padding: 20px 15px;
+				border-bottom: 0;
+
+				&:hover {
+					border-color: transparent;
+					background-color: transparent;
+				}
 			}
 
 			&.active {
+
+				@media (min-width: @screen-lg) {
+					&:hover {
+						span {
+							border-color: transparent;
+						}
+					}
+				}
+
 				a {
 					border: 0;
 
-					@media (min-width: @screen-md) {
+					@media (min-width: @screen-lg) {
 						color: black;
 						border: 2px solid @yellow;
 						border-bottom: 0;
+						margin-top: -2px;
 					}
 				}
 
 				span {
-					@media (max-width: @screen-md) {
+					@media (max-width: @screen-md-max) {
 						.hilite();
 						border-color: @orange;
 					}
@@ -77,16 +97,14 @@
 
 			&:hover {
 				span {
-					@media (max-width: @screen-md) {
-						.hilite();
-						border-color: @orange;
-					}
+					.hilite();
+					border-color: @orange;
 				}
 			}
 		}
 
 		.dropdown-toggle {
-			@media (min-width: @screen-md) {
+			@media (min-width: @screen-lg) {
 				display: none;
 			}
 
@@ -102,7 +120,11 @@
 
 	form {
 		position: relative;
-		padding: 35px;
+		padding: 35px 15px;
+
+		@media (min-width: @screen-xs) {
+			padding: 35px;
+		}
 
 		.form-title {
 			text-transform: none;
@@ -112,14 +134,14 @@
 
 		.form-group {
 			.clearfix();
-			@media (max-width: @screen-md) {
+			@media (max-width: @screen-md-max) {
 				margin-bottom: 0;
 			}
 
 			.form-column {
 				.make-md-column(6);
 
-				@media (max-width: @screen-md) {
+				@media (max-width: @screen-md-max) {
 					margin-bottom: 20px;
 				}
 			}

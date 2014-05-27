@@ -41,6 +41,11 @@ $.widget( "ui.timespinner", $.ui.spinner, {
 		$('#slides').slidesjs({
 	        width: 1200,
 	        height: 555,
+	        play: {
+				interval: 5000,
+				effect: "fade",
+				auto: true,
+			},
 	        navigation: {
 	        	// /active: false,
 	         	effect: "fade"
@@ -56,18 +61,43 @@ $.widget( "ui.timespinner", $.ui.spinner, {
 	        },
         });
 
+        //--------ABOUT-HEADER-NAV--------//
+		$('.about-header-nav ul li').on('click', function() {
+			$('.about-header-nav ul li.active').removeClass('active');
+		})
+
     	//--------MAP--------//
 		if ( $('#map-canvas').length ) {
-			var map_styles = [{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]}];
+			var map_styles = [{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"simplified","elementType":"all","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]}];
+			var myLatlng = new google.maps.LatLng(40.659699, -73.980956);
 			var myOptions = {
-				zoom: 14,
-				center: new google.maps.LatLng(40.652908, -73.9525936),
+				zoom: 15,
+				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				scrollwheel: false,
-				styles: map_styles
+				styles: map_styles,
+                animation: google.maps.Animation.BOUNCE
 			};
 
 			var map = new google.maps.Map(document.getElementById('map-canvas'), myOptions);
+
+			var image = {
+			    url: '/images/alisons-marker.png',
+			    scaledSize: new google.maps.Size(73, 81)
+		  	};
+
+			var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				icon: image,
+				url: 'https://www.google.com/maps/preview?q=224+PROSPECT+PARK+WEST+BROOKLYN,+NY+11215&ie=UTF-8&hq=&hnear=0x89c25b1e6ee19a55:0xbb52bbd33c51cf9b,224+Prospect+Park+West,+Brooklyn,+NY+11215&gl=us&ei=cct8U7zqB6LlsAT75oHoCw&ved=0CCcQ8gEwAA',
+				animation: google.maps.Animation.BOUNCE,
+			});
+
+			google.maps.event.addListener(marker, 'click', function() {
+	            window.open(this.url);
+	        });
 		}
 
 		//--------FORMS--------//
@@ -87,9 +117,9 @@ $.widget( "ui.timespinner", $.ui.spinner, {
             var alertbox = $('.active .form-response');
 
             if (data.success) {
-                console.log('success');
+               
             } else {
-                console.log('fail');
+                
             }
 
             $('.ajax-loader.active').removeClass('active');

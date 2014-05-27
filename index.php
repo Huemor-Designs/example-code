@@ -10,10 +10,11 @@
 
 		<header class="header">
 			<div id="slides">
-				<img src="/images/stockphoto1.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
 				<img src="/images/header-img.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+				<img src="/images/stockphoto3.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+				
 			</div>
-			
+
 			<h1>
 				Animal lovers with a <span class="hilite">history</span> to prove it.
 				<div class="see-why">
@@ -45,7 +46,7 @@
 					<p>"Your passion for your work and your compassion for your clients was appareant to all of us. With all the problems that Rina presented, another Dr. might have suggested euthanasia as the only resort. It was clear to us that such a measure was your last resort."</p>
 				</div>
 
-				<div class="color-box btn-orange">Consistent</div>
+				<div class="color-box btn-orange">Comprehensive</div>
 			</div>
 		</section>
 
