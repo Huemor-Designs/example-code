@@ -18,8 +18,33 @@
 	}
 
 	.member {
-		.make-md-column(6);
+		//.make-md-column(6);
 		margin-bottom: 45px;
+
+		//new
+		.clearfix();
+
+		&.alex {
+			.member-image {
+				.make-background-size-cover('/images/team/Alex.jpg');
+
+				@media (min-width: @screen-xs) and (max-width: @screen-sm-max) {
+					background-position: center -170px !important;
+				}
+			}
+		}
+
+		&.siobhan {
+			.member-image {
+				.make-background-size-cover('/images/team/Siobhan.jpg');
+			}
+		}
+
+		&.laura {
+			.member-image {
+				.make-background-size-cover('/images/team/Laura.jpg');
+			}
+		}
 
 		.member-title, .member-description {
 			color: black;
@@ -27,10 +52,21 @@
 
 		.member-image {
 			position: relative;
-			width: 100%;
+			//width: 100%;
 			height: 250px;
 
 			background-color: #CCC;
+
+			//new
+			.make-md-column(4);
+
+			@media (max-width: @screen-sm-max) {
+				background-position: center top !important;
+			}
+		}
+
+		.member-bio {
+			.make-md-column(8);
 		}
 
 		.member-name {
@@ -41,14 +77,24 @@
 
 
 		.member-title {
-			text-transform: none;
+			/*text-transform: none;
 			font-style: italic;
 			margin-top: 15px;
-			margin-bottom: 30px;
+			margin-bottom: 30px;*/
+
+			//new
+			margin-top: 0;
+			margin-bottom: 20px;
+			text-transform: none;
+
+			@media (max-width: @screen-sm-max) {
+				margin-top: 20px;
+			}
 		}
 
 		.member-description {
-			&:extend(p.small);
+			//&:extend(p.small);
+			text-align: justify;
 		}
 	}
 }

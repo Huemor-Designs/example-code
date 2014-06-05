@@ -2,9 +2,9 @@
  	require_once('../PHPMailer-master/class.phpmailer.php');
 
  	// fields to be validated
-	$name = $email = $phone = $tech_name = "";
+	$name = $email = $phone = $doc_name = "";
 
-	$required_fields = array("name", "email", "phone", "tech-name");
+	$required_fields = array("name", "email", "phone", "doc-name");
 	
 	foreach ($required_fields as $fieldname) {
 		if (array_key_exists($fieldname, $_POST)) {
@@ -18,7 +18,7 @@
 		$name       = test_input($_POST["name"]);
 		$email      = test_input($_POST["email"]);
 		$phone      = test_input($_POST["phone"]);
-		$tech_name  = test_input($_POST["tech-name"]);
+		$doc_name   = test_input($_POST["doc-name"]);
 	}
 
 	$error_message = "";
@@ -29,7 +29,7 @@
 		$error_message .= '<p>The Name you entered does not appear to be valid.</p>';
 	}
 
-	if(!preg_match($string_exp, $tech_name)) {
+	if(!preg_match($string_exp, $doc_name)) {
 		$error_message .= '<p>The Name you entered does not appear to be valid.</p>';
 	}
  
@@ -125,7 +125,7 @@
 	$email_message .= "Name: " . $name . "\n";
 	$email_message .= "Email: " . $email . "\n";
 	$email_message .= "Phone: " . $phone . "\n";
-	$email_message .= "Technician's Name: " . $tech_name . "\n";
+	$email_message .= "Document Name: " . $doc_name . "\n";
 
 
 	$to      = "norm@huemordesigns.com";

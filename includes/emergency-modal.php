@@ -7,8 +7,12 @@
 			</div>
 
 			<div class="modal-body">
-				<p>Ut adipiscing eleifend risus ut malesuada. Maecenas nec ligula nisi. Sed volutpat velit non sem tincidunt blandit. Quisque sagittis pulvinar dolor, quis elementum sem tincidunt a. Proin venenatis posuere nunc. Proin laoreet est eu placerat laoreet. Donec a pretium metus.</p>
-				<p>Ut adipiscing eleifend risus ut malesuada. Maecenas nec ligula nisi. Sed volutpat velit non sem tincidunt blandit. Quisque sagittis pulvinar dolor, quis elementum sem tincidunt a. Proin venenatis posuere nunc. Proin laoreet est eu placerat laoreet. Donec a pretium metus.</p>
+				<img class="emergency-image" src="/images/emergency.jpg">
+
+				<p class="first">Alison Animal Hospital provides emergency care for our established clients. One of our veterinarians is available to consult via an emergency service line 24/7. The emergency services line can be reached via (XXX) XXX-XXXX
+.</p>
+				<p>Due to lack of 24-hour care at our facility, we may advise certain emergencies to be seen by a referral hospital.</p>
+				<p>Emergencies that occur during normal business hours will be seen on an as-needed basis.</p>
 				<h4 class="emergency-service">
 					emergency services line:  <br>
 					<a href="tel+1-718-555-5555">1-718-555-5555</a>

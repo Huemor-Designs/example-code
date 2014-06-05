@@ -99,7 +99,6 @@
 					</form>
 
 					<form id="technician" class="tab-pane fade" action="/endpoints/technician.php" method="post">
-						<h2 class="form-title">A question or follow up that goes to a technician.</h2>
 
 						<div class="form-group">
 							<div class="form-column">
@@ -114,8 +113,8 @@
 							</div>
 
 							<div class="form-column ">
-								<label for="tech-name" class="sr-only">technician's name</label>
-								<input type="text" class="form-input" id="tech-name" name="tech-name" placeholder="technician's name*" required>
+								<label for="doc-name" class="sr-only">technician's name</label>
+								<input type="text" class="form-input" id="doc-name" name="doc-name" placeholder="Document or image title*" required>
 
 								<label for="uploadFile" class="sr-only">image upload</label>
 								<input type="file" class="form-input" id="uploadFile" name="uploadFile">
@@ -163,7 +162,7 @@
 					</form>
 
 					<form id="prescription" class="tab-pane fade" action="/endpoints/prescription.php" method="post">
-						<h2 class="form-title">Directly request a re-fill for a prescription.</h2>
+						<h2 class="form-title">Directly request a re-fill for a prescription</h2>
 
 						<div class="form-group">
 							<div class="form-column">

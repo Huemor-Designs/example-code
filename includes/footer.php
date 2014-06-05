@@ -13,9 +13,11 @@
 		</div>
 		
 		<div class="footer-legal">
+		<?php if ($current == "home"): ?>
 			<h6>
 				<a href="#"><span class="hl">Design by HUEMOR</span></a>
 			</h6>
+		<?php endif; ?>
 
 			<div class="footer-social">
 				<a class="facebook" href="#"><span class="hl"></span></a>
@@ -25,7 +27,6 @@
 	</div>
 	
 	<script src="https://maps.googleapis.com/maps/api/js?v=AIzaSyA4v30fV40scJ61KUJEmB0ldxxwBNpt3m0&sensor=false"></script>
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
 	<script src="/js/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/jquery.form.min.js"></script>

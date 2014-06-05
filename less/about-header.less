@@ -26,21 +26,26 @@
 		.make-background-size-cover('/images/wood-texture.jpg');
 		
 		.about-header-pane {
-			@media (min-width: @screen-md) {
-				height: 300px;
+			@media (min-width: @screen-sm) {
+				height: 385px;
+			}
+
+			@media (min-width: @screen-lg) {
+				height: 355px;
 			}
 		}
 
 		.pane-image {
 			.clearfix();
+			.make-background-size-cover('/images/about-sidebar-img.png');
 			
-			height: 215px;
+			height: 160px;
 			background-color: @dark-red;
 			padding: 0 20px;
 
 			@media (min-width: @screen-sm) {
+				height: 110%;
 				width: 230px;
-				height: 415px;
 
 				position: absolute;
 				left: 0;
@@ -53,6 +58,7 @@
 
 			@media (min-width: @screen-sm) {
 				margin-left: 230px;
+				padding-bottom: 30px;
 			}
 		}
 	}

@@ -43,5 +43,23 @@
 	p {
 		color: black;
 		margin-bottom: 40px;
+
+		&.first {
+			@media (min-width: @screen-sm) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	.emergency-image {
+		width: 200px;
+		margin: 0 auto 20px auto;
+		display: block;
+
+		@media (min-width: @screen-xs) {
+			margin-right: 15px;
+			margin-bottom: 0;
+			float: left;
+		}
 	}
 }
