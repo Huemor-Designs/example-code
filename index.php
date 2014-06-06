@@ -10,11 +10,12 @@
 
 		<header class="header">
 			<div id="slides">
-				<img src="/images/slides/slide1.jpg" alt="">
+				<img src="/images/slides/storefront.jpg" alt="">
+				<img src="/images/slides/parrot1.jpg" alt="">
 				<img src="/images/slides/slide2.jpg" alt="">
-				<img src="/images/slides/slide3.jpg" alt="">
-				<img src="/images/slides/slide4.jpg" alt="">
-				<img src="/images/slides/slide5.jpg" alt="">
+				<img src="/images/slides/cat.jpg" alt="">
+				<img src="/images/slides/doge.jpg" alt="">
+				<img src="/images/slides/bird2.jpg" alt="">
 			</div>
 
 			<h1>
@@ -59,8 +60,11 @@
 
 			<div class="home-section-copy left">
 				<div class="home-section-copy-inner">
-					<p>"We brought a 10 year old cat in to Dr. K with a complex sarcoma which he first diagnosed correctly then presented us with
-the range of options.  His kindness and confidence reassured us about going through with a complex surgery, though Dr. K acknowledged there were no guarantees.  He proceeded to execute an amazingly skillful surgical procedure and personally called us to tell us of his optimistic prognosis for recovery. All the time he exhibited an exceedingly high level of professionalism and an "above and beyond" personal concern, compassion, and care that we found both remarkable and extraordinary.  Today over eighteen months later, Little Kitty is as affectionate and full of life as ever. Never have we had a vet who showed as much real compassion and concern for our pets, or for us.  Dr. K. saved Little Kitty's life. We are ever grateful."</p>
+					<p>"We brought a 10 year old cat in to Dr. K with a complex sarcoma which he first diagnosed correctly and then presented us with the range of options. 
+						His kindness and confidence reassured us about going through with a complex surgery. He proceeded to execute an amazingly skillful surgical procedure and personally called us to tell us of his optimistic prognosis for recovery. 
+						Today over eighteen months later, Little Kitty is as affectionate and full of life as ever. 
+						Never have we had a vet who showed as much real compassion and concern for our pets and for us. 
+						Dr. K. saved Little Kitty's life. We are ever grateful."</p>
 					<p class="attribution">- Anele Rubin and Eric Banks</p>
 				</div>
 

@@ -99,6 +99,7 @@
 					</form>
 
 					<form id="technician" class="tab-pane fade" action="/endpoints/technician.php" method="post">
+						<h2 class="form-title">Upload a document or image</h2>
 
 						<div class="form-group">
 							<div class="form-column">

@@ -39,15 +39,33 @@
 	.partner {
 		.make-xs-column(3);
 
+		display: table;
+		text-align: center;
+
 		width: 200px;
 		height: 170px;
 		margin-bottom: 30px;
 
 		.partner-inner {
+			display: table-cell;
+			vertical-align: middle;
+
 			width: 100%;
 			height: 100%;
 
-			.make-background-size-cover('/images/wood-texture.jpg');
+			//.make-background-size-cover('/images/wood-texture.jpg');
+		}
+
+		img {
+			max-width: 100%;
+
+			&.small-world {
+				width: 105px;
+			}
+
+			&.blue-pearl {
+				margin-left: -40px;
+			}
 		}
 	}
 
