@@ -109,49 +109,65 @@ We work solely for our patients and their owners. We believe that combing freedo
 					<div class="partners-row">
 						<div class="partner one">
 							<div class="partner-inner">
-								<img src="/images/partners/Infinite Hope Logo.jpg">
+								<a target="_blank" href="http://www.infinitehopeonline.org/">
+									<img src="/images/partners/Infinite Hope Logo.jpg" alt="Infinite Hope" title="Infinite Hope">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner two">
 							<div class="partner-inner">
-								<img class="small-world" src="/images/partners/Small World Logo.jpg">
+								<a target="_blank" href="http://www.smallworldrescue.org/about.htm">
+									<img class="small-world" src="/images/partners/Small World Logo.jpg" alt="Small World Animal Rescue" title="Small World Animal Rescue">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner three">
 							<div class="partner-inner">
-								<img class="blue-pearl" src="/images/partners/NYCVS logo.png">
+								<a target="_blank" href="http://bluepearlvet.com/newyork/">
+									<img class="blue-pearl" src="/images/partners/NYCVS logo.png" alt="Blue Pearl" title="Blue Pearl">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner four">
 							<div class="partner-inner">
-								<img src="/images/partners/logo.png">
+								<a target="_blank" href="http://www.amcny.org/">
+									<img src="/images/partners/logo.png" alt="Animal Medical Center" title="Animal Medical Center">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner five">
 							<div class="partner-inner">
-								<img src="/images/partners/Cornell Lab Logo.jpg">
+								<a target="_blank" href="https://ahdc.vet.cornell.edu/">
+									<img src="/images/partners/Cornell Lab Logo.jpg" alt="Cornell University College of Veterinary Medicine" title="Cornell University College of Veterinary Medicine">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner six">
 							<div class="partner-inner">
-								<img src="/images/partners/verg-logo.gif">
+								<a target="_blank" href="http://www.verg-brooklyn.com/">
+									<img src="/images/partners/verg-logo.gif" alt="Verg" title="Verg">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner seven">
 							<div class="partner-inner">
-								<img src="/images/partners/VetStem-logo.jpg">
+								<a target="_blank" href="http://www.vet-stem.com/">
+									<img src="/images/partners/VetStem-logo.jpg" alt="Vet-Stem" title="Vet-Stem">
+								</a>
 							</div>
 						</div>
 
 						<div class="partner eight">
 							<div class="partner-inner">
-								<img src="/images/partners/CPR Logo.jpg">
+								<a target="_blank" href="http://cprpets.weebly.com/">
+									<img src="/images/partners/CPR Logo.jpg" alt="CPR Pets" title="CPR Pets">
+								</a>
 							</div>
 						</div>
 					</div>
