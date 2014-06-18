@@ -43,7 +43,7 @@
 			padding: 10px;
 		}
 
-		.facebook, .twitter {
+		.facebook, .twitter, .instagram, .foursquare {
 			&:before {
 				.transition(0.3s);
 			}
@@ -65,6 +65,22 @@
 
 		.twitter {
 			.make-icon(before; @icon-twitter; 28px);
+			
+			&:hover:before {
+				color: #55ACEE;
+			}
+		}
+		
+		.instagram {
+			.make-icon(before; @icon-instagram; 28px);
+			
+			&:hover:before {
+				color: #55ACEE;
+			}
+		}
+		
+		.foursquare {
+			.make-icon(before; @icon-foursquare; 28px);
 			
 			&:hover:before {
 				color: #55ACEE;

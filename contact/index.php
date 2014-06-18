@@ -3,6 +3,12 @@
 <html lang="en">
 	<?php
 		$current = "contact";
+		
+		$meta = '<title>Contact A Care Specialist | Contact</title>
+		
+		      <meta name="description" content="Need an appointment, consultation, or help? Contact a care specialist at Alison Animal Hospital today. Learn More">
+		      ';
+		
 		include("../includes/head.php");
 	?>
 
@@ -22,8 +28,7 @@
 
 						<h5 class="info">
 							<span class="x-small">Phone:</span><br>
-							<a href="tel:+1-631-393-6116">631-393-6116</a><br>
-							<a href="tel:+1-631-393-6116">631-393-6116</a>
+							<a href="tel:+1-718-473-0081">718-473-0081</a><br>
 						</h5>
 					</div>
 

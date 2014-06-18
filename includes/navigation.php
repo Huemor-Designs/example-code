@@ -24,9 +24,9 @@
 		        	<a href="/contact/"><span class="hl">Contact</span></a>
 		        </li>
 		        <li class="nav-contact">
-		        	<a href="tel:+1-631-393-6116">
+		        	<a href="tel:+1-718-473-0081">
 		        		<span class="phone-number"></span>
-		        		<span class="hl">516-555-5555</span>
+		        		<span class="hl">718-473-0081</span>
 		        	</a>
 		        </li>
 		        <li class="nav-contact">

@@ -2,6 +2,12 @@
 <html lang="en">
 	<?php
 		$current = "home";
+	
+	    $meta = '<title>Brooklyn Animal Hospital | Home | Alison Animal Hospital</title>
+	
+	      <meta name="description" content="Alison Animal Hospital is a Brooklyn, New York facility focused on providing top-quality care along with a personable and friendly environment. Learn More">
+	      ';
+		
 		include("includes/head.php");
 	?>
 
@@ -14,8 +20,11 @@
 				<img src="/images/slides/parrot1.jpg" alt="">
 				<img src="/images/slides/slide2.jpg" alt="">
 				<img src="/images/slides/cat.jpg" alt="">
+				<img src="/images/slides/ppw-circle.jpg" alt="">
 				<img src="/images/slides/doge.jpg" alt="">
+				<img src="/images/slides/windsor.jpg" alt="">
 				<img src="/images/slides/bird2.jpg" alt="">
+				<img src="/images/slides/fuller-place.jpg" alt="">
 			</div>
 
 			<h1>

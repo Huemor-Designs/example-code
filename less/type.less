@@ -46,13 +46,15 @@
 	.make-icon(@icon-placement; @icon; @icon-size; @icon-pack);
 }
 
-@icon-calendar:					"\e600";
+@icon-calendar:					"\e604";
 @icon-plus: 					"\e601";
 @icon-arrow-down: 				"\e602";
 @icon-facebook: 				"\e603";
-@icon-twitter: 					"\e604";
-@icon-envelope:					"\e605";
-@icon-phone:					"\e606";
+@icon-twitter: 					"\e600";
+@icon-envelope:					"\e608";
+@icon-phone:					"\e607";
+@icon-instagram:				"\e606";
+@icon-foursquare:				"\e605";
 
 .icon-calendar:before {
 	content: @icon-calendar;
@@ -74,6 +76,12 @@
 }
 .icon-phone:before {
 	content: @icon-phone;
+}
+.icon-instagram:before {
+	content: @icon-instagram;
+}
+.icon-foursquare:before {
+	content: @icon-foursquare;
 }
 
 

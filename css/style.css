@@ -9485,11 +9485,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 @media (min-width: 992px) {
   .footer .footer-inner {
-    padding: 30px 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .footer .footer-inner {
     padding: 30px 40px;
   }
 }
@@ -9514,65 +9509,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media (min-width: 992px) {
   .footer .footer-contact {
     float: left;
-    width: 25%;
-  }
-}
-.footer .footer-mailing-list {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-@media (min-width: 992px) {
-  .footer .footer-mailing-list {
-    float: left;
     width: 33.33333333333333%;
-  }
-}
-.footer .footer-mailing-list:before,
-.footer .footer-mailing-list:after {
-  content: " ";
-  display: table;
-}
-.footer .footer-mailing-list:after {
-  clear: both;
-}
-.footer .footer-mailing-list:before,
-.footer .footer-mailing-list:after {
-  content: " ";
-  display: table;
-}
-.footer .footer-mailing-list:after {
-  clear: both;
-}
-.footer .footer-mailing-list .form-group {
-  margin-bottom: 0;
-}
-@media (min-width: 992px) {
-  .footer .footer-mailing-list .form-group,
-  .footer .footer-mailing-list .btn-footer {
-    float: left;
-  }
-}
-.footer .footer-mailing-list .btn-footer {
-  padding: 15px;
-  font-size: 18px;
-}
-@media (min-width: 768px) {
-  .footer .footer-mailing-list .btn-footer {
-    width: auto;
-  }
-}
-@media (min-width: 992px) {
-  .footer .footer-mailing-list .btn-footer {
-    margin-left: 10px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  .footer .footer-mailing-list .btn-footer {
-    padding: 15px 10px;
-    font-size: 14px;
   }
 }
 .footer .footer-legal {
@@ -9584,7 +9521,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media (min-width: 992px) {
   .footer .footer-legal {
     float: left;
-    width: 25%;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -9668,7 +9605,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -moz-osx-font-smoothing: grayscale;
 }
 .footer .footer-social .instagram:hover:before {
-  color: #f7941d;
+  color: #55ACEE;
 }
 .footer .footer-social .foursquare:before {
   content: "\e605";
@@ -9686,20 +9623,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -moz-osx-font-smoothing: grayscale;
 }
 .footer .footer-social .foursquare:hover:before {
-  color: #84ca32;
+  color: #55ACEE;
 }
 .footer .footer-nav,
 .footer .footer-contact,
-.footer .footer-legal,
-.footer .footer-mailing-list {
+.footer .footer-legal {
   padding-left: 0;
   padding-right: 0;
 }
 @media (max-width: 991px) {
   .footer .footer-nav,
   .footer .footer-contact,
-  .footer .footer-legal,
-  .footer .footer-mailing-list {
+  .footer .footer-legal {
     text-align: center;
   }
 }
@@ -9995,12 +9930,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 @media (min-width: 768px) {
   .about-header .about-header-panels .about-header-pane {
-    height: 450px;
+    height: 385px;
   }
 }
 @media (min-width: 1200px) {
   .about-header .about-header-panels .about-header-pane {
-    height: 430px;
+    height: 355px;
   }
 }
 .about-header .about-header-panels .pane-image {
@@ -10029,11 +9964,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 @media (min-width: 768px) {
   .about-header .about-header-panels .pane-image {
-    height: 100%;
-    /* 110 */
+    height: 110%;
     width: 230px;
     position: absolute;
     left: 0;
+    top: -50px;
   }
 }
 .about-header .about-header-panels .pane-copy {
@@ -10407,7 +10342,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 .partners .partner img {
   max-width: 100%;
-  width: 100%;
 }
 .partners .partner img.small-world {
   width: 105px;

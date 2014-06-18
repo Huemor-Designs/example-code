@@ -2,6 +2,12 @@
 <html lang="en">
 	<?php
 		$current = "about";
+		
+		$meta = '<title>An Animal Care Facility That Cares | About</title>
+		
+		      <meta name="description" content="Alison Animal Hospital grew from a dream that work can be pleasurable and helpful to one\'s community. Find out How">
+		      ';
+				
 		include("../includes/head.php");
 	?>
 
@@ -27,7 +33,7 @@
 							</div>
 							<div class="pane-copy">
 								<p>
-									Alison Animal Hospital grew out of Alex's dream that work can be pleasurable and combined with the ideal of service.  After almost a dozen years working in corporate culture, and after the loss of his younger sister Alison, Alex decided to follow his heart, his love of animals and start his career anew. Years of night school, hands-on animal experience and hard work ultimately turned that vision into a reality.  Alison Animal Hospital springs from the idea that all of our hard work, our focus and a little bit of dreaminess can lead to sustainable vitality, both our own vitality and that of our companion animals as well.
+									Alison Animal Hospital grew out of Alex's conviction that one's work could and should be personally fulfilling, while being performed at the highest level of expertise and service. After college, he experienced corporate culture for a dozen years. But it was not until the loss of his beloved younger teenage sister, Alison, that Alex knew he must follow his heart: to care for animals as a medical doctor. After years of academic preparation, a lot of hard work, and hands-on animal experience as a veterinarian, his goal has reached fruition. AAH embodies Alex's very personal statement about what he has chosen to do for the rest of his life. It is a place where love, caring and professional expertise combine to form a wellspring of vitality for the companion animals whom we adore.
 								</p>
 							</div>
 						</div>
@@ -40,7 +46,7 @@
 								<p>
 									Our practice philosophy is to exemplify medicine's highest values: commitment to service, community involvement, altruism and leadership in and on behalf of the veterinary profession. 
 Our approach is one of science, logic and compassion. Every pet is precious and individual. We are independent thinkers. We are not part of any group or larger entity and have worked hard to resist any contract pricing with vendors and reference labs which might compromise our freedom. 
-We work solely for our patients and their owners. We believe that combing freedom of business with freedom of thought is the prerequisite for the highest level care.
+We work solely for our patients and their owners. We believe that combining freedom of business with freedom of thought is the prerequisite for the highest level care.
 								</p>
 							</div>
 						</div>
@@ -93,7 +99,7 @@ We work solely for our patients and their owners. We believe that combing freedo
 						<div class="member-bio">
 							
 							<p class="member-description">
-								Dr. Alex Klein grew up in Great Neck, New York with animal-loving parents.  As a child, he was a puppy walker for Seeing Eyes for the Blind and endured the continual cycle of attaching to and separating from deliciously adorable lab puppies.  He served as a volunteer EMT/fireman during his high school and college years and always had an interest in medicine, but was more lured by technology and television as a teen.  He graduated from NYU's Tisch School of the Arts with a BFA in 1995.  After a dozen years in fast-paced corporate world, Alex decided to face the daunting and exciting challenge of transforming his career.  He attended CCNY at night in order to complete a few years of post-baccalaureate coursework and worked on an upstate farm, ultimately leading to his acceptance into Cornell University's veterinary school.  Alex has since worked in private practice and animal rescue/shelter facilities, most recently as a staff surgeon and veterinary associate at North Shore Animal League.  Alex lives in Windsor Terrace with his wife Lisa, his son Noam and their three cats: Nema, Uni and Freaka.
+								Dr. Alex Klein grew up in Great Neck, New York with animal-loving parents. As a child, he was a puppy walker for Seeing Eyes for the Blind and endured the continual cycle of attaching to and separating from deliciously adorable Lab puppies. He served as a volunteer EMT/fireman during his high school and college years and always had an interest in medicine, but was also attracted to technology. He graduated from NYU's Tisch School of the Arts with a BFA in 1995. After a dozen years in the fast-paced corporate world, Alex decided to face the daunting and exciting challenge of transforming his career. He attended CCNY at night in order to complete post-baccalaureate coursework and worked on an upstate farm, ultimately leading to his acceptance into Cornell University Veterinary School. Alex has since worked in private practice and animal rescue/shelter facilities, most recently as a staff surgeon and veterinary associate at North Shore Animal League. Alex lives in Windsor Terrace with his wife Lisa, his son Noam and their three cats.
 							</p>
 						</div>
 					</div>
@@ -104,7 +110,7 @@ We work solely for our patients and their owners. We believe that combing freedo
 
 		<section class="partners">
 			<div class="partners-inner">
-				<h2>Our Parnters</h2>
+				<h2>Our Partners</h2>
 				<div class="partners-wrapper">
 					<div class="partners-row">
 						<div class="partner one">

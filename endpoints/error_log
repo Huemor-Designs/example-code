@@ -1,0 +1,28 @@
+[13-May-2014 09:29:11 America/Denver] PHP Warning:  require_once(../PHPMailer-master/class.phpmailer.php): failed to open stream: No such file or directory in /home3/huemorte/public_html/alison/endpoints/general.php on line 2
+[13-May-2014 09:29:11 America/Denver] PHP Fatal error:  require_once(): Failed opening required '../PHPMailer-master/class.phpmailer.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home3/huemorte/public_html/alison/endpoints/general.php on line 2
+[13-May-2014 09:31:58 America/Denver] PHP Warning:  require_once(../PHPMailer-master/class.phpmailer.php): failed to open stream: No such file or directory in /home3/huemorte/public_html/alison/endpoints/general.php on line 2
+[13-May-2014 09:31:58 America/Denver] PHP Fatal error:  require_once(): Failed opening required '../PHPMailer-master/class.phpmailer.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home3/huemorte/public_html/alison/endpoints/general.php on line 2
+[13-May-2014 09:38:29 America/Denver] PHP Warning:  require_once(../PHPMailer-master/class.phpmailer.php): failed to open stream: No such file or directory in /home3/huemorte/public_html/alison/endpoints/general.php on line 2
+[13-May-2014 09:38:29 America/Denver] PHP Fatal error:  require_once(): Failed opening required '../PHPMailer-master/class.phpmailer.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home3/huemorte/public_html/alison/endpoints/general.php on line 2
+[13-May-2014 10:13:50 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/general.php on line 62
+[13-May-2014 10:13:50 America/Denver] PHP Notice:  Undefined variable: safe_filename in /home3/huemorte/public_html/alison/endpoints/general.php on line 62
+[13-May-2014 10:17:29 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/general.php on line 62
+[13-May-2014 10:17:29 America/Denver] PHP Notice:  Undefined variable: safe_filename in /home3/huemorte/public_html/alison/endpoints/general.php on line 62
+[13-May-2014 11:51:21 America/Denver] PHP Notice:  Undefined index: uploadFile in /home3/huemorte/public_html/alison/endpoints/technician.php on line 46
+[13-May-2014 11:51:21 America/Denver] PHP Notice:  Undefined variable: message in /home3/huemorte/public_html/alison/endpoints/technician.php on line 128
+[13-May-2014 11:51:22 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/technician.php on line 138
+[13-May-2014 11:51:36 America/Denver] PHP Fatal error:  Call to undefined function check_file_uploaded_length() in /home3/huemorte/public_html/alison/endpoints/technician.php on line 87
+[13-May-2014 12:06:12 America/Denver] PHP Fatal error:  Call to undefined function check_file_uploaded_length() in /home3/huemorte/public_html/alison/endpoints/technician.php on line 87
+[13-May-2014 12:06:58 America/Denver] PHP Notice:  Undefined index: uploadFile in /home3/huemorte/public_html/alison/endpoints/technician.php on line 46
+[13-May-2014 12:06:58 America/Denver] PHP Notice:  Undefined variable: message in /home3/huemorte/public_html/alison/endpoints/technician.php on line 128
+[13-May-2014 12:06:58 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/technician.php on line 138
+[13-May-2014 12:10:45 America/Denver] PHP Notice:  Undefined index: uploadFile in /home3/huemorte/public_html/alison/endpoints/technician.php on line 46
+[13-May-2014 12:10:45 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/technician.php on line 139
+[13-May-2014 12:11:46 America/Denver] PHP Fatal error:  Call to undefined function check_file_uploaded_length() in /home3/huemorte/public_html/alison/endpoints/technician.php on line 87
+[13-May-2014 12:19:54 America/Denver] PHP Notice:  Undefined index: uploadFile in /home3/huemorte/public_html/alison/endpoints/technician.php on line 46
+[13-May-2014 12:19:54 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/technician.php on line 139
+[13-May-2014 12:25:56 America/Denver] PHP Notice:  Undefined index: uploadFile in /home3/huemorte/public_html/alison/endpoints/technician.php on line 46
+[13-May-2014 12:25:57 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/technician.php on line 139
+[13-May-2014 12:26:24 America/Denver] PHP Fatal error:  Call to undefined function check_file_uploaded_length() in /home3/huemorte/public_html/alison/endpoints/technician.php on line 87
+[13-May-2014 12:35:31 America/Denver] PHP Notice:  Undefined index: uploadFile in /home3/huemorte/public_html/alison/endpoints/technician.php on line 46
+[13-May-2014 12:35:31 America/Denver] PHP Notice:  Undefined variable: file_to_attach in /home3/huemorte/public_html/alison/endpoints/technician.php on line 139
