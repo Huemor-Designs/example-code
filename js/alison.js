@@ -143,5 +143,12 @@ $.widget( "ui.timespinner", $.ui.spinner, {
 			$( "#appointment-time" ).timespinner( "value", current );
 		});
 
+
+		//--------COMING SOON--------//
+		if (document.cookie.replace(/(?:(?:^|.*;\s*)alisonvisited\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+			$('#coming-soon-modal').modal('show');
+        	document.cookie = "alisonvisited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+        }
+
 	});
 //})

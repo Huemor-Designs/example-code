@@ -1,4 +1,7 @@
 <div class="main-wrapper"><!--main wrapper-->
+
+<?php include('coming-soon.php'); ?>
+
 <nav class="navbar navbar-default" role="navigation">
 	<div class="navbar-inner">
 		<div class="navbar-header">

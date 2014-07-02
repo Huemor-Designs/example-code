@@ -19,41 +19,11 @@
 	}
 
 	.footer-contact {
-		.make-md-column(3);
-	}
-
-	.footer-mailing-list {
 		.make-md-column(4);
-		.clearfix();
-		padding-bottom: 15px;
-
-		.form-group {
-			@media (min-width: @screen-xs) {
-				display: inline-block;
-			}
-			@media (min-width: @screen-md) {
-				float: left;
-			}
-		}
-
-		.btn-footer {
-			width: 100%;
-			padding: 15px;
-			font-size: 18px;
-
-			@media (min-width: @screen-xs) {
-				width: auto;
-			}
-
-			@media (min-width: @screen-md) {
-				float: left;
-				margin-left: 10px;
-			}
-		}
 	}
 
 	.footer-legal {
-		.make-md-column(3);
+		.make-md-column(6);
 
 		@media (min-width: @screen-md) {
 			text-align: right;
@@ -105,7 +75,7 @@
 			.make-icon(before; @icon-instagram; 28px);
 			
 			&:hover:before {
-				color: #f7941d;
+				color: #55ACEE;
 			}
 		}
 		
@@ -113,12 +83,12 @@
 			.make-icon(before; @icon-foursquare; 28px);
 			
 			&:hover:before {
-				color: #84ca32;
+				color: #55ACEE;
 			}
 		}
 	}
 
-	.footer-nav, .footer-contact, .footer-legal, .footer-mailing-list {
+	.footer-nav, .footer-contact, .footer-legal {
 		.remove-side-padding();
 
 		@media (max-width: @screen-sm-max) {
